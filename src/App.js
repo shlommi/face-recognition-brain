@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navigation from "./components/Navigation/Navigation";
 import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
 import Particles from "react-particles-js";
@@ -60,6 +59,10 @@ class App extends Component {
 
   displayFaceBox = (box) => {
     this.setState({ box: box });
+    window.scroll({
+      top: 10000,
+      behavior: 'smooth'
+    });
   }
 
   onButtonSubmit = () => {
@@ -89,7 +92,7 @@ class App extends Component {
         })
         .catch(err => {
           console.log(err);
-          alert('bad image, try another');
+          alert('bad image, try another or you didnt copy the url of the image');
         });
 
     }
@@ -123,7 +126,6 @@ class App extends Component {
     return (
       <div className="App">
         <Particles params={particlesOptions} className="particles" />
-        <Navigation handleRouteChange={this.handleRouteChange} isSignedIn={isSignedIn} />
         <div>
 
           <ImageLinkForm

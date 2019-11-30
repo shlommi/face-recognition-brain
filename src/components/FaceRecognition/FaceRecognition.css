@@ -4,6 +4,9 @@ div .bounding-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  cursor: pointer;
-  
+  cursor: pointer; 
+}
+
+#box-model{
+  margin: 1rem auto;
 }

@@ -5,23 +5,27 @@ import Logo from '../Logo/Logo';
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
   return (
     <div >
+      <div className="header-wrapper" >
       <Logo />
-      <header className="tc pv4 pv5-ns">
-        <h1 className="f5 f3-ns fw6 black-70">This Magic Brain will detect faces in your pictures.</h1>
-        <h2 className="f5 black-70 fw2 ttu tracked">Give it a try.</h2>
+      <header >
+        <h2 >Hi, </h2>
+        <h2 >I'm ROBO-FD20</h2>
+        <h2 >I detect faces in your pictures.</h2>
+        <h3 >You only need to copy and paste the URL of the image</h3>
       </header>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"/></svg>
       <div className="center">
-        <div className=" center pa4 br3 shadow-5 form">
+        <div className="center pa4 br3 shadow-5 form">
           <input
             onChange={onInputChange}
             type="text"
             className="f4 pa2 w-70 center"
           />
           <button
-            className="w-30 grow f4 link ph3 pv2 dib white bg-light-purple"
             onClick={onButtonSubmit}
           >
-            Detect
+            DETECT
           </button>
         </div>
       </div>

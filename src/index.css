@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
   background: linear-gradient(89deg,#B4E2E2 0%, #F2FAFA 100%);
 }
 
